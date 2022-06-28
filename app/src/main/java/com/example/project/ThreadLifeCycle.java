@@ -11,8 +11,10 @@ public class ThreadLifeCycle extends AppCompatActivity {
         setContentView(R.layout.activity_thread_life_cycle);
 
         Thread th = new Thread();
+        Thread th2 = new Thread();
         Toast.makeText(this, "Thread "+th.getState(), Toast.LENGTH_SHORT).show();
         th.start();
+        th2.start();
         Toast.makeText(this, "Thread "+th.getState(), Toast.LENGTH_SHORT).show();
         try {
             Thread.sleep(0000);
